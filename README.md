@@ -1,7 +1,7 @@
 # caddy_reverse_proxy_grpc_CDN 
 caddy反代gRPC协议及上CDN的配置方法  
   
-最近项目需要使用caddy进行反代grpc协议，在网上研究很久，发现即使是caddy自己的社区都没有一个明确的配置说明，  
+最近项目必须需使用caddy进行反代grpc协议，在网上研究很久，发现即使是caddy自己的社区都没有一个明确的配置说明，  
 不得不自己进行反复试验，最后终于研究出来  
 
 这次使用的是caddy v2.4.3版linux amd4，https://github.com/caddyserver/caddy/releases 这里下载
