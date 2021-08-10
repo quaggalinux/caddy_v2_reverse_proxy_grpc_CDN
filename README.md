@@ -9,7 +9,7 @@ caddy反代gRPC协议及上CDN的配置方法
   
 #nano /etc/caddy/Caddyfile  
   
-写入以下内容，可以自动签证书，假设grpc的serviceName是abcd  
+写入以下内容，可以自动签证书，假设grpc的serviceName是abcd，语句reverse_proxy /abcd/*是固定格式，千万不要乱改  
  
 www.youdomain.com {  
 root * /var/www  
