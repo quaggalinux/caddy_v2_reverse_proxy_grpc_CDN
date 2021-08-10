@@ -11,16 +11,16 @@ caddy反代gRPC协议及上CDN的配置方法
   
 写入以下内容，可以自动签证书，假设grpc的serviceName是abcd  
  
-www.youdomain.com { 
-root * /var/www 
-file_server 
-reverse_proxy /abcd/* 127.0.0.1:12345 { 
-flush_interval -1 
-transport http { 
-versions h2c 
-} 
-} 
-} 
+www.youdomain.com {  
+root * /var/www  
+file_server  
+reverse_proxy /abcd/* 127.0.0.1:12345 {  
+flush_interval -1  
+transport http {  
+versions h2c  
+}  
+}  
+}  
  
 保存并退出 
  
